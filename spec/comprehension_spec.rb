@@ -244,20 +244,16 @@ describe "GIT" do
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "33. If you clone down a repo at noon and don't touch it but three minues later, 
-      someone else pushes two commits to it, will 'git status' say you are ahead or 
-      behind when you run it at 12:05pm" do
+  it "33. If you clone down a repo at noon and don't touch it but three minues later, someone else pushes two commits to it, will 'git status' say you are ahead or behind when you run it at 12:05pm" do
     # "ahead" or "behind" or "ahead and behind"
-    answer = "?"
+    answer = "behind"
     encoded_answer = "fb6dbd81382d78f0f0633759a9c6033858e445b5"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "34. If you clone down a repo and make one change that you add and commit locally,
-     and one developer has pushed to your remote since you cloned it, 
-     will 'git status' say you're ahead or behind (or both) origin/master?" do
+  it "34. If you clone down a repo and make one change that you add and commit locally, and one developer has pushed to your remote since you cloned it, will 'git status' say you're ahead or behind (or both) origin/master?" do
     # "ahead" or "behind" or "ahead and behind"
-    answer = "?"
+    answer = "ahead and behind"
     encoded_answer = "d81d22fb57ad5589d12d6363f4160b33232c3510"
     expect(encode(answer)).to eq(encoded_answer)
   end
