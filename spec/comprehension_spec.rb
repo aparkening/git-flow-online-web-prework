@@ -84,7 +84,7 @@ describe "GIT" do
 
   it "12. Is 'git pull' the same as running 'git fetch' followed by 'git merge'?" do
     # "true" or "false" in a string
-    answer = "Yes" 
+    answer = "true" 
     
     encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
     expect(encode(answer)).to eq(encoded_answer)
@@ -126,7 +126,7 @@ describe "GIT" do
 
   it "18. What is the one line syntax for creating and switching to a branch called 
      'add-nav-bar'?" do
-    answer = "git "
+    answer = "git checkout -b add-nav-bar"
     encoded_answer = "f6317616a8601aeb64c0f27f71a4b7bf9e3b8453"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -134,7 +134,7 @@ describe "GIT" do
   it "19. 'git branch style-image' followed by 'git checkout style-image' 
       is the same as 'git checkout -b style-image'" do
     # "true" or "false", in a string
-    answer = "?"
+    answer = "true"
 
     encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
     expect(encode(answer)).to eq(encoded_answer)
@@ -142,26 +142,23 @@ describe "GIT" do
 
   it "20. It is best practice to add a feature on the master branch" do
     # "true" or "false", in a string
-    answer = "?"
+    answer = "false"
 
     encoded_answer = "7cb6efb98ba5972a9b5090dc2e517fe14d12cb04"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "21. If you're working on a project on master and you create a new branch, 
-      that branch will be empty until you add code" do
+  it "21. If you're working on a project on master and you create a new branch, that branch will be empty until you add code" do
     # "true" or "false", in a string
-    answer = "?"
+    answer = "false"
 
     encoded_answer = "7cb6efb98ba5972a9b5090dc2e517fe14d12cb04"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "22. The branch that you are 'on' does not affect the content of a branch
-      that you create: for instance, a branch made off of master will look exactly
-      like a branch made off of `add-walrus-and-polar-bear`" do
+  it "22. The branch that you are 'on' does not affect the content of a branch that you create: for instance, a branch made off of master will look exactly like a branch made off of `add-walrus-and-polar-bear`" do
     # "true" or "false", in a string
-    answer = "?"
+    answer = "true"
 
     encoded_answer = "7cb6efb98ba5972a9b5090dc2e517fe14d12cb04"
     expect(encode(answer)).to eq(encoded_answer)
