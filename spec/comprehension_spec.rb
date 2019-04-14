@@ -236,8 +236,7 @@ describe "GIT" do
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "32. If you clone down a repo and make one change that you add and commit locally,
-     assuming no one has pushed to your remote since you cloned it, will 'git status' say
+  it "32. If you clone down a repo and make one change that you add and commit locally, assuming no one has pushed to your remote since you cloned it, will 'git status' say
      you're ahead or behind origin/master?" do
     # "ahead" or "behind" or "ahead and behind"
     answer = "?"
