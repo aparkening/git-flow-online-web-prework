@@ -19,8 +19,8 @@ describe "GIT" do
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "4. What command allows you to add all previously untracked, modified files and create a message, 'add img to index' for the commit in one command?" do
-    answer = "git add-commit -m 'add img to index'"
+  it "4. What command allows you to add all previously tracked, modified files and create a message, 'add img to index' for the commit in one command?" do
+    answer = "git commit -m 'add img to index'"
     encoded_answer = "00565151beeb1fa3682d6386399eaf87b788a5bc"
     expect(encode(answer)).to eq(encoded_answer)
   end
