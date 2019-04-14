@@ -73,8 +73,7 @@ describe "GIT" do
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "11. What command do you run to update the local master branch with the 
-      master branch on the remote 'upstream'?" do
+  it "11. What command do you run to update the local master branch with the master branch on the remote 'upstream'?" do
     answer = "git pull upstream master "
     encoded_answer = "10ce0782f27a2e126f7fe0f12dd189cc16578e26"
     expect(encode(answer)).to eq(encoded_answer)
@@ -85,7 +84,7 @@ describe "GIT" do
 
   it "12. Is 'git pull' the same as running 'git fetch' followed by 'git merge'?" do
     # "true" or "false" in a string
-    answer = "No" 
+    answer = "Yes" 
     
     encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
     expect(encode(answer)).to eq(encoded_answer)
